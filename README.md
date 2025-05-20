@@ -9,7 +9,7 @@ O **Movies App** é um aplicativo iOS que utiliza a arquitetura **MVVM** para ge
 
 - **Exibição de Filmes:** A lista de filmes é buscada a partir de uma API externa.
 - **Pesquisa de Filmes:** Funcionalidade de busca que permite ao usuário encontrar filmes específicos.
-- **Favoritos:** O usuário pode adicionar filmes à lista de favoritos. Esses filmes são armazenados localmente usando **UserDefaults**.
+- **Favoritos:** Em SwiftUI usuário pode adicionar filmes à lista de favoritos. Esses filmes são armazenados localmente usando **UserDefaults**.
 - **Tela de Detalhes:** Ao clicar em um filme, o usuário pode ver mais detalhes sobre o filme selecionado.
 - **Navegação com Coordinator:** A navegação entre telas é gerenciada utilizando o padrão **Coordinator**, permitindo um controle centralizado sobre as transições de telas.
 - **Testes Unitários:** O projeto possuí ampla cobertura de testes usando **XCTest** para garantir o funcionamento correto das funcionalidades principais.
@@ -45,6 +45,10 @@ O **Movies App** é um aplicativo iOS que utiliza a arquitetura **MVVM** para ge
 3. Execute o projeto em um simulador.
 
 4. Caso queira testar a persistência de favoritos, adicione filmes à lista de favoritos e feche o app. Ao reabrir, a lista será mantida.
+## ScreenShots
+  <img src="https://github.com/user-attachments/assets/043d6d37-b7ee-49c6-9ddc-768577a65b99" width="390" height="844" alt="Screenshot iPhone 15"/>
+  <img src="https://github.com/user-attachments/assets/4551b9d5-e686-4715-9752-3b089257a7c5" width="390" height="844" alt="Screenshot iPhone 15"/>
+  <img src="https://github.com/user-attachments/assets/25f57570-3a53-4830-ab48-4bb25c7cbe73" width="390" height="844" alt="Screenshot iPhone 15"/>
 
 ## Contato
 

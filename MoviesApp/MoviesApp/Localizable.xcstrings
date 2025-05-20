@@ -1,0 +1,332 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "added_to_favorites" : {
+      "comment" : "Message that shows when an item is added to favorites",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Added to favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "foi adicionado aos favoritos"
+          }
+        }
+      }
+    },
+    "Atenção" : {
+      "comment" : "Attention title",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attention"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Atenção"
+          }
+        }
+      }
+    },
+    "back_button_title" : {
+      "comment" : "Title for back button",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Voltar"
+          }
+        }
+      }
+    },
+    "error_title" : {
+      "comment" : "Error message title",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Erro"
+          }
+        }
+      }
+    },
+    "favorite_action" : {
+      "comment" : "Action to add to favorites",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Favoritar"
+          }
+        }
+      }
+    },
+    "favorite_added" : {
+      "comment" : "Message when item is added to favorites",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorited"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Adicionado aos Favoritos"
+          }
+        }
+      }
+    },
+    "favorite_removed" : {
+      "comment" : "Message when item is removed from favorites",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Removed from favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Removido dos Favoritos"
+          }
+        }
+      }
+    },
+    "favorites_title" : {
+      "comment" : "Title for Favorites section",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Favoritos"
+          }
+        }
+      }
+    },
+    "Favorito" : {
+      "comment" : "Favorite label",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorite"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Favorito"
+          }
+        }
+      }
+    },
+    "Favoritos" : {
+
+    },
+    "foi adicionado aos favoritos!" : {
+      "comment" : "Message when item has been added to favorites",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "its already favorite"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "foi adicionado aos favoritos!"
+          }
+        }
+      }
+    },
+    "já está na sua lista de favoritos." : {
+      "comment" : "Message when item is already in favorites",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "its already  in your favorite list"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "já está na sua lista de favoritos."
+          }
+        }
+      }
+    },
+    "movies_title" : {
+      "comment" : "Title for Movies section",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Movies"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Filmes"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "comment" : "Button label for OK",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ok"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "rating_label" : {
+      "comment" : "Label for rating",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rating"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Avaliação"
+          }
+        }
+      }
+    },
+    "release_date" : {
+      "comment" : "Label for release date",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Release date"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Data de lançamento"
+          }
+        }
+      }
+    },
+    "remove_from_favorites" : {
+      "comment" : "Action to remove from favorites",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove from favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Remover dos favoritos"
+          }
+        }
+      }
+    },
+    "removed_from_favorites" : {
+      "comment" : "Message that shows when an item is removed from favorites",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Removed from favorites"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "foi removido dos favoritos"
+          }
+        }
+      }
+    },
+    "search_movies" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "search movies"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesquisar Filmes"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

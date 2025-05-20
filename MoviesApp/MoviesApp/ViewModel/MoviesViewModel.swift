@@ -75,42 +75,26 @@ final class MoviesViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: workItem)
     }
 
-
     func loadFavoriteMovies() {
         favoriteMovies = favoriteMoviesManager.loadFavoriteMovies()
         onFavoritesUpdated?()
     }
 
     func addFavorite(movie: Movie) {
-        guard !favoriteMovies.contains(where: { $0.id == movie.id }) else { return }
-        favoriteMovies.append(movie)
-        favoriteMoviesManager.saveFavoriteMovies(favoriteMovies)
-        onFavoritesUpdated?()
+        favoriteMoviesManager.addFavorite(movie: movie)
+        loadFavoriteMovies()
     }
 
     func removeFavorite(at index: Int) {
-        guard favoriteMovies.indices.contains(index) else { return }
-        favoriteMovies.remove(at: index)
-        favoriteMoviesManager.saveFavoriteMovies(favoriteMovies)
-        onFavoritesUpdated?()
+        favoriteMoviesManager.removeFavorite(at: index)
+        loadFavoriteMovies()
     }
 
     @discardableResult
     func toggleFavorite(movie: Movie) -> Bool {
-        var favs = favoriteMoviesManager.loadFavoriteMovies()
-        guard let idx = favs.firstIndex(where: { $0.id == movie.id }) else {
-            favs.append(movie)
-            favoriteMovies = favs
-            favoriteMoviesManager.saveFavoriteMovies(favs)
-            onFavoritesUpdated?()
-            return true
-        }
-        
-        favs.remove(at: idx)
-        favoriteMovies = favs
-        favoriteMoviesManager.saveFavoriteMovies(favs)
-        onFavoritesUpdated?()
-        return false
+        let result = favoriteMoviesManager.toggleFavorite(movie: movie)
+        loadFavoriteMovies()
+        return result
     }
 
     func formattedRating(for movie: Movie) -> String {
@@ -118,7 +102,7 @@ final class MoviesViewModel: ObservableObject {
     }
 
     func isFavorite(movie: Movie) -> Bool {
-        favoriteMovies.contains { $0.id == movie.id }
+        favoriteMoviesManager.isMovieFavorite(movie)
     }
 
     func loadImage(for movie: Movie, completion: @escaping (UIImage?) -> Void) {

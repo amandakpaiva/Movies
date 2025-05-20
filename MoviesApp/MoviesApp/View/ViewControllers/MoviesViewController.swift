@@ -125,11 +125,34 @@ extension MoviesViewController: UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+    func tableView(_ tableView: UITableView,
+                   trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath
+    ) -> UISwipeActionsConfiguration? {
         let movie = viewModel.filteredMovies[indexPath.row]
-        let addFavoriteAction = UIContextualAction(style: .normal, title: "favorite_action".localized) { [weak self] (_, _, completion) in
-            self?.viewModel.addFavorite(movie: movie)
+        let addFavoriteAction = UIContextualAction(
+            style: .normal,
+            title: "favorite_action".localized
+        ) { [weak self] _, _, completion in
+            guard let self = self else {
+                completion(false)
+                return
+            }
+
+            self.viewModel.addFavorite(movie: movie)
             completion(true)
+
+            DispatchQueue.main.async {
+                let alert = UIAlertController( 
+                    title: "favorite_added".localized,
+                    message: "",
+                    preferredStyle: .alert
+                )
+                alert.addAction(UIAlertAction(
+                    title: "Ok".localized,
+                    style: .default
+                ))
+                self.present(alert, animated: true)
+            }
         }
         addFavoriteAction.backgroundColor = .systemGreen
 

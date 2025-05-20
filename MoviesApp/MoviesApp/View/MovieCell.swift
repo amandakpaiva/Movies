@@ -13,6 +13,7 @@ class MovieCell: UITableViewCell {
     
     static let identifier = "MovieCell"
     private var currentIndexPath: IndexPath?
+    private var currentImageURL: String?
     
     //MARK: UI
     private lazy var movieImageView: UIImageView = {
@@ -74,12 +75,15 @@ class MovieCell: UITableViewCell {
     func configure(with movie: Movie, viewModel: MoviesViewModel, indexPath: IndexPath) {
         titleLabel.text = movie.title
         ratingLabel.text = viewModel.formattedRating(for: movie)
-        
-        currentIndexPath = indexPath
-        
+        let urlString = "https://image.tmdb.org/t/p/w200\(movie.posterPath)"
+        currentImageURL = urlString
+        movieImageView.image = nil
+
         viewModel.loadImage(for: movie) { [weak self] image in
-            guard self?.currentIndexPath == indexPath else { return }
-            self?.movieImageView.image = image
+            guard let self = self, self.currentImageURL == urlString else { return }
+            DispatchQueue.main.async {
+                self.movieImageView.image = image
+            }
         }
     }
 }

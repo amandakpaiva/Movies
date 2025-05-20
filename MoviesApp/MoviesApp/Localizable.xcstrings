@@ -220,6 +220,9 @@
         }
       }
     },
+    "Não há filmes favoritos no momento" : {
+
+    },
     "OK" : {
       "comment" : "Button label for OK",
       "extractionState" : "stale",

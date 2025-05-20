@@ -35,6 +35,10 @@ final class FavoritesViewControllerTests: XCTestCase {
     // MARK: - Tests
 
     func testRemoveFavoriteViaViewModel() {
+        UserDefaults.standard.removeObject(forKey: "favoriteMovies")
+        viewModel.loadFavoriteMovies()
+        XCTAssertTrue(viewModel.favoriteMovies.isEmpty, "Deveria começar sem favoritos")
+
         let demo = Movie(
             adult: false,
             backdropPath: "/path/back",
@@ -51,11 +55,11 @@ final class FavoritesViewControllerTests: XCTestCase {
             voteAverage: 8.0,
             voteCount: 10
         )
-        viewModel.favoriteMovies = [demo]
+
+        viewModel.addFavorite(movie: demo)
+        XCTAssertTrue(viewModel.favoriteMovies.count > 0, "Deveria haver pelo menos 1 favorito após adicionar")
 
         viewModel.removeFavorite(at: 0)
-
-        // Assert
         XCTAssertTrue(viewModel.favoriteMovies.isEmpty, "O filme deveria ter sido removido do array de favoritos.")
     }
 }
